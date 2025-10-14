@@ -5,5 +5,5 @@ if __name__ == "__main__":
 import numpy as np
 x_values = np.linspace(1, 4, 1000)
 y_values = x_values**3 - 2*x_values**2 + x_values + 3
-max_y = max(y_values)
+min_y = min(y_values)
 print('Найменьшее значение:', min_y)
