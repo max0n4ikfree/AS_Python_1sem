@@ -15,7 +15,6 @@ def all_values_equal(dictionary):
     values = list(dictionary.values())
     return all(value == values[0] for value in values)
 
-# Демонстрация работы программы
 if __name__ == "__main__":
     print("а) Сумма значений словаря:")
     dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
@@ -35,17 +34,13 @@ if __name__ == "__main__":
     print(f"{dict2} → {result3}")
     print(f"{dict3} → {result4}")
     
-    # Дополнительные примеры
     print("\nДополнительные примеры:")
     
-    # Пустой словарь
     empty_dict = {}
     print(f"Пустой словарь {empty_dict} → {all_values_equal(empty_dict)}")
     
-    # Список с повторяющимися элементами
     list2 = ['x', 'y', 'z']
     print(f"Список {list2} → {list_to_nested_dict(list2)}")
     
-    # Словарь с разными типами значений
     mixed_dict = {'a': 5, 'b': 5.0, 'c': 5}
     print(f"Смешанный словарь {mixed_dict} → {all_values_equal(mixed_dict)}")
