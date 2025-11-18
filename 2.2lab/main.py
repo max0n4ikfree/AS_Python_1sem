@@ -15,7 +15,6 @@ def Quarter(x, y):
     else:
         return 4
 
-# Примеры использования
 print(Quarter(2.5, 3.1))   # 1
 print(Quarter(-1.8, 4.2))  # 2
 print(Quarter(-3.5, -2.1)) # 3
