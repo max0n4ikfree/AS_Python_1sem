@@ -1,16 +1,16 @@
 if __name__ == "__main__":
     pass
 def sum_dict_values(dictionary):
-    """Вычисляет сумму всех значений в словаре"""
+    
     return sum(dictionary.values())
 
 def list_to_nested_dict(lst):
-    """Преобразует список в словарь с пустыми вложенными словарями"""
+   
     return {item: {} for item in lst}
 
 def all_values_equal(dictionary):
-    """Проверяет, являются ли все значения в словаре одинаковыми"""
-    if not dictionary:  # если словарь пустой
+
+    if not dictionary:  
         return True
     values = list(dictionary.values())
     return all(value == values[0] for value in values)
