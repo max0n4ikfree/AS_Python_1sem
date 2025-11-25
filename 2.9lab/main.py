@@ -13,17 +13,17 @@ def write_matrices(filename, data):
 def multiply_matrices(A, B):
     return [[sum(a * b for a, b in zip(row, col)) for col in zip(*B)] for row in A]
 
-# Чтение матриц
+
 m1 = read_matrices('file1.dat')
 m2 = read_matrices('file2.dat')
 
-# Умножение и формирование результата
+
 result = [(A, B, multiply_matrices(A, B)) for A, B in zip(m1, m2)]
 
-# Запись в третий файл
+
 write_matrices('file3.dat', result)
 
-# Вывод содержимого файлов
+
 print("Файл 1:")
 for i, mat in enumerate(m1):
     print(f"Матрица {i+1}: {mat}")
@@ -40,7 +40,7 @@ for i, (A, B, C) in enumerate(result):
     print(f"C: {C}\n")
 import pickle
 
-# Тестовые данные
+
 matrices1 = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 matrices2 = [[[2, 0], [1, 2]], [[1, 1], [0, 1]]]
 
