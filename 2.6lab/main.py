@@ -1,16 +1,10 @@
-def modulus(z):
-    return (z.real**2 + z.imag**2)**0.5
+import complex_ops
 
-def multiply(z1, z2):
-    return z1 * z2
+z1 = (3, 4)
+z2 = (1, 2)
 
-def divide(z1, z2):
-    return z1 / z2
-    import cmath
-
-z1 = complex(3, 4)
-z2 = complex(1, 2)
-
-print(modulus(z1))
-print(multiply(z1, z2))
-print(divide(z1, z2))
+print("z1 =", z1)
+print("z2 =", z2)
+print("Модуль z1:", complex_ops.modulus(z1))
+print("Умножение:", complex_ops.multiply(z1, z2))
+print("Деление:", complex_ops.divide(z1, z2))
